@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+  background-color: white;
+  margin: 9.5em auto;
+  width: 90%;
+  border-radius: 20px;
+}
+.images-collection {
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+  top: -0.3em;
+  display: flex;
+  flex-direction: column;
+}
+.shadow {
+  object-fit: cover;
+  width: 100%;
+  z-index: 0;
+}
+.lady {
+  z-index: 1;
+  position: absolute;
+  margin: -22% auto;
+  object-fit: cover;
+  width: 100%;
+}
+.text-box header {
+  padding: 0.7em;
+  text-align: center;
+}
+.text-box {
+  padding: 1.5em;
+}
+.question {
+  cursor: pointer;
+  font-weight: 400;
+  width: 90%;
+  font-size: 0.9rem;
+  padding-bottom: 0.5em;
+  display: inline-block;
+}
+.faq-cards.active h3 {
+  font-weight: 700;
+}
+.faq-cards {
+  font-size: 1rem;
+  padding: 0 0 1em 0;
+  margin: 0 auto 1em auto;
+  border-bottom: 1px solid lightslategrey;
+  height: 2rem;
+  overflow: hidden;
+}
+.question:hover {
+  color: hsl(14, 88%, 65%);
+}
+.answer {
+  padding: 0.3em 0;
+  font-size: 0.85rem;
+}
+.active {
+  height: auto;
+}
+
+.faq-cards.active svg {
+  transform: rotate(180deg);
+}
+.bbox
+{
+    display: none;
+}
+
+@media screen and (min-width: 376px) and (max-width: 626px) {
+  .container {
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    margin: 13% auto ;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1080px;
+  }
+  .faq-cards {
+    font-size: 1.5rem;
+  }
+  .images-collection
+{
+    height: 450px;
+     margin: 0 ;
+  width: 70%;
+  position: relative;
+  top:0;
+  display: flex;
+  flex-direction: column;
+}
+.over
+{
+    overflow: hidden;
+}
+  .text-box
+  {
+    padding: 2em;
+    width: 70%;
+  }
+  .shadow {
+    object-fit: contain;
+    width: 170%;
+    z-index: 0;
+    height: 170%;
+    top: -45%;
+    left: -81%;
+    position: relative;
+  }
+  .lady {
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    left: -10%;
+    top: 3%;
+  }
+  .bbox
+  {
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    z-index:1 ;
+    position: absolute;
+    left: -25%;
+    top: 35%;
+  }
+}
